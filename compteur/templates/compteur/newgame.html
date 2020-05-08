@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{%  block content %}
+
+    <form action="{% url "nouvelle partie" %}" method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Commencer la partie" class="btn btn-primary"/>
+    </form>
+
+{%  endblock %}

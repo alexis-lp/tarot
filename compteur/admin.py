@@ -5,3 +5,7 @@ from .models import *
 
 admin.site.register(TarotPlayer)
 admin.site.register(TarotGame)
+admin.site.register(TarotTurn)
+admin.site.register(Poignée)
+admin.site.register(Couleur)
+admin.site.register(Contrat)
